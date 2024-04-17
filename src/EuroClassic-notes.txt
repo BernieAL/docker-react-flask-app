@@ -1,0 +1,23 @@
+Auto Scraper has 4 parts:
+	react front end
+		-makes requests to flask api
+		-serve react front end with nginx server
+	python flask api
+		-api in its own container
+	database (psql)
+		-own container
+	selenium python script
+		-requires chrome installed in container 
+
+
+
+how to handle script writing to files?
+how to handle reading from files and running cleaning scripts
+cleaning scripts involve pandas - I imagine this would require pip install pandas in the dockerfile
+
+
+
+First find out how to store scraped data when in a container
+	-would need a volume
+
+
